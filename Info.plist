@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>James Huang</string>
+	<key>Builder Version</key>
+	<string>14606.2.104.1.1</string>
+	<key>CFBundleDisplayName</key>
+	<string>Annotator</string>
+	<key>CFBundleIdentifier</key>
+	<string>app.cmps.annotator</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Context Menu Items</key>
+		<array>
+			<dict>
+				<key>Command</key>
+				<string>from-cm</string>
+				<key>Identifier</key>
+				<string>run-inject-annotate</string>
+				<key>Title</key>
+				<string>Annotate</string>
+			</dict>
+		</array>
+		<key>Global Page</key>
+		<string>globalAnnotator.html</string>
+	</dict>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>End</key>
+			<array>
+				<string>injectAnnotator.js</string>
+			</array>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>Annotating or highlighting text on the web</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>All</string>
+		</dict>
+	</dict>
+	<key>Website</key>
+	<string>http://cmps.app</string>
+</dict>
+</plist>

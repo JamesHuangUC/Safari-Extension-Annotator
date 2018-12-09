@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>global HTML page</title>
+    <script type="text/javascript">
+    var flag = false;
+
+    function runInject(status, event) {
+        flag = !status;
+        safari.application.activeBrowserWindow.activeTab.page.dispatchMessage(
+            'from-global',
+            flag
+        );
+    }
+
+    function performCommand(event) {
+        if (event.command === 'from-cm') {
+            runInject(flag, event);
+        }
+    }
+
+    safari.application.addEventListener('command', performCommand, false);
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
